@@ -40,4 +40,4 @@ const perrito ={
     edad : 23,
 
 
-};
+};;
