@@ -22,7 +22,7 @@ body {
 
 }
 
-#Dino {
+.image-profile {
 
 border: 150px;
 border : white 20px double;
@@ -43,7 +43,7 @@ border: rgb(226, 217, 217) 5px double;
 
 }
 
-#lista1 {
+.skill {
   font-family:Arial;
   font-weight:bold;
   font-size:13px;
@@ -54,9 +54,9 @@ border: rgb(226, 217, 217) 5px double;
   color:gray;
 
 }
-#lista1 li {
+.skill li {
    display:inline;
-   padding-left:90px;
+   padding-left:40px;
    padding-right:70px;
   background-color:black;
 }
@@ -94,7 +94,7 @@ background-color: rgba(255, 255, 255, 0);
     
 }
     
-#Profesional{
+.Profesional{
 
   background-color: rgba(14, 14, 14, 0.486);
 
