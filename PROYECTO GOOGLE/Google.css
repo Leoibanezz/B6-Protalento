@@ -1,0 +1,172 @@
+body{
+
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header{
+
+    display:flex;
+    background-color: rgba(240, 236, 236, 0);
+    border: 0px solid rgb(245, 238, 238);
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    flex-direction: row-reverse;
+    justify-content: end;
+    
+
+}
+
+main{
+
+height: calc(100% - 60px - 65px);
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.contenedor-hijo{
+ 
+    background-color: rgba(25, 216, 216, 0);
+    font-family:Arial,sans-serif;
+    padding: 4px;
+    margin: 4px;
+    display:inline-block;
+    
+    
+    
+}
+
+.contenedor-google {
+
+display: flex;
+margin: auto;
+padding: 50px;
+width: 320px;
+justify-content: center;
+
+}
+
+.contenedor-busqueda{
+justify-content: center;
+display: flex;
+margin: auto;
+padding:4px;
+width: 620px;
+height:30px;
+border: 1px solid;
+border-radius: 24px;
+
+}
+
+.contenedor-busqueda input{
+
+    width: 100%;
+    border-color: transparent;
+
+
+}
+.contenedor-busqueda input :focus-visible{
+
+    outline: none;
+}
+
+.contenedor-busqueda button{
+border: none;
+background-color: transparent;
+height: 30px;
+
+
+}
+
+.logobusqueda{
+
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    background-image:url(busqueda-de-lupa.png);
+    background-size: cover;
+
+}
+
+
+.microfono{
+
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    background-image:url(voz-de-google.png);
+    background-size: cover;
+}
+
+.camara{
+
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    background-image:url(450_1000.png);
+    background-size: cover;
+
+
+}
+    
+.botones button{
+
+border:solid 1px;
+border-radius:8px;
+background-color: rgb(226, 213, 213);
+padding: 12px;
+color: rgb(14, 13, 13) ;
+margin:25px 5px 5px 5px;
+font-size:14px Arial, sans-serif;
+
+}
+
+p{
+
+font-family:13px Arial, sans-serif;    
+
+
+}
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    height: auto;    
+    background-color: rgba(0, 128, 128, 0);
+
+}
+
+footer section {
+    padding: 0 15px;
+    display: flex;
+    height: 50%;
+    
+}
+
+footer section.Informacion {
+    border-top: black solid 1px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer section.Informacion div {
+    display: flex;
+    gap: 18px;
+
+}
+
+footer section.Informacion div a {
+    color: black;
+    text-decoration: none;
+
+
+}
