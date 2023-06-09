@@ -1,33 +1,33 @@
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 header{
 
-    
-    position:sticky;
-    top: 0;
-    z-index: 1;
-    background-color: white;
+  
+  position:sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
 }
 
 .navbar-pinterest {
 
-    height:60px;
-    display: flex;
-    flex-direction: row;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 4px;
-    padding-top: 4px;
-    align-items: center;
-    gap: 20px;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,Hiragino Kaku Gothic Pro,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    color: #111111;
-    font-size: 16px;
-    position: sticky;
-    
+  height:60px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  align-items: center;
+  gap: 20px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,Hiragino Kaku Gothic Pro,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  color: #111111;
+  font-size: 16px;
+  position: sticky;
+  
 }
 
 .Inicio{
@@ -68,25 +68,25 @@ background-color: rgba(197, 193, 193, 0.226);
 }
 .Busqueda input{
 
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    outline: none;
-   
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+ 
 
 }
 
 input::placeholder {
-    color: rgb(0, 0, 0);
-    font-size:15px;
-    font-style:arial ;
+  color: rgb(0, 0, 0);
+  font-size:15px;
+  font-style:arial ;
 
-  }
+}
 
 
 .Busqueda button{
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 
 }
 
@@ -103,14 +103,14 @@ border-radius: 50%;
 }
 
 .contenido {
-    
-    display: flex;
-    margin-top: -40px;
-    padding: 30px;
-    width:100%;
-    
+  
+  display: flex;
+  margin-top: -40px;
+  padding: 30px;
+  width:100%;
+  
 
- }
+}
 
 .contenido div .Imagenes{
 
@@ -119,12 +119,12 @@ display: flex;
 }
 
 .Imagenes {
-    
-    align-items: top;    
-    columns: 5 200px;
-    margin: 5px ;
-    padding:5px;
-    
+  
+  align-items: top;    
+  columns: 5 200px;
+  margin: 5px ;
+  padding:5px;
+  
 
 
 }
@@ -132,41 +132,41 @@ display: flex;
 
 
 .Imagenes .card-image {
-    
-        position: relative;
-        padding: 5px;  
+  
+      position: relative;
+      padding: 5px;  
 }
 
 .card-image:hover{
 
-    .Botones1{
-        display: block;
-    }
+  .Botones1{
+      display: block;
+  }
 
-    .Botones2{
+  .Botones2{
 
-        display: block;
-        
+      display: block;
+      
 }
-    .Botones3{
+  .Botones3{
 
-        display: block;
-    }
+      display: block;
+  }
 
 }
 
 .Imagenes .card-image img {
-    
-        border-radius: 9%;
-        min-width: 250px;
-        max-width: 250px;
+  
+      border-radius: 9%;
+      min-width: 250px;
+      max-width: 250px;
 
 }
-    
+  
 .Botones1 {
 
 background-color: #e60023;
-display: none;
+display: flex;
 flex-direction: start;
 position: absolute;
 left: 60%;
@@ -200,18 +200,18 @@ cursor: pointer;
 
 .Botones3 {
 
-    position: absolute;
-    display: none;
-    left: 60%;
-    bottom: 7%;
-    width: 35px;
-    height: 35px;
-    background-size: cover;
-    background-image:url(imagenes/subir.png );
-    background-color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
+  position: absolute;
+  display: none;
+  left: 60%;
+  bottom: 7%;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-image:url(imagenes/subir.png );
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 
 
 }
@@ -228,25 +228,24 @@ text-align: center;
 
 /* Estilos para pantallas más pequeñas, como dispositivos móviles */
 @media (max-width: 767px) {
-    .navbar-pinterest .contenido {
-      width: 100%; /* Ocupa todo el ancho disponible */
-      padding: 10px; /* Añade espacio de relleno */
-    }
+  .navbar-pinterest .contenido {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Añade espacio de relleno */
   }
-  
-  /* Estilos para pantallas medianas, como tablets */
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .navbar-pinterest .contenido {
-      width: 90%; /* Ajusta el ancho del contenedor principal */
-      padding: 20px; /* Añade espacio de relleno */
-    }
+}
+
+/* Estilos para pantallas medianas, como tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar-pinterest .contenido {
+    width: 90%; /* Ajusta el ancho del contenedor principal */
+    padding: 20px; /* Añade espacio de relleno */
   }
-  
-  /* Estilos para pantallas más grandes, como desktops */
-  @media (min-width: 1024px) {
-    .navbar-pinterest .contenido {
-      width: 80%; /* Ajusta el ancho del contenedor principal */
-      padding: 40px; /* Añade espacio de relleno */
-    }
+}
+
+/* Estilos para pantallas más grandes, como desktops */
+@media (min-width: 1024px) {
+  .navbar-pinterest .contenido {
+    width: 80%; /* Ajusta el ancho del contenedor principal */
+    padding: 40px; /* Añade espacio de relleno */
   }
-  
+}
