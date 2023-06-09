@@ -107,7 +107,7 @@ border-radius: 50%;
   display: flex;
   margin-top: -40px;
   padding: 30px;
-  width:100%;
+  width:95%;
   
 
 }
@@ -115,6 +115,7 @@ border-radius: 50%;
 .contenido div .Imagenes{
 
 display: flex;
+
 
 }
 
@@ -124,6 +125,7 @@ display: flex;
   columns: 5 200px;
   margin: 5px ;
   padding:5px;
+  gap: 50px;
   
 
 
@@ -166,7 +168,7 @@ display: flex;
 .Botones1 {
 
 background-color: #e60023;
-display: flex;
+display: none;
 flex-direction: start;
 position: absolute;
 left: 60%;
@@ -219,7 +221,7 @@ cursor: pointer;
 .navbar-pinterest {
 
 
-width: 99%;
+width: 97%;
 text-align: center;
 
 }
