@@ -1,15 +1,17 @@
 body {
     font-family: Arial, sans-serif;
     margin: 10px;
-    background-image: url(https://watermark.lovepik.com/background/20211021/large/lovepik-yellow-black-friday-sale-background-image_450045194.jpg);
+    background-image: url(https://png.pngtree.com/background/20210714/original/pngtree-black-friday-sale-with-neon-light-background-picture-image_1223119.jpg);
     background-size: cover;
     height: 90vh;
+    
     
   }
 
 h1 {
     text-align: center;
     color: white;
+    
 }
 
 h2 {
@@ -18,8 +20,17 @@ h2 {
     color: white;
 }
 
+h3 {
+    text-align:left;
+    color: white;
+}
+
+
+
+
 #Empleado1{
     color: aliceblue;
+    
 }
 #Empleado2{
     color: aliceblue;
@@ -29,19 +40,24 @@ h2 {
 .General{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 #Empleado1 {
     width: 50%;
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
     text-align: center;
     font-family: Arial, sans-serif;
+    border: white 5px dashed;
+    margin: 15px;
+    
 }
 #Empleado2 {
     width: 50%;
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
     text-align: center;
     font-family: Arial, sans-serif;
+    border: white 5px dashed;
+    margin: 15px;
 }
 
 .Contenedor2{
@@ -67,13 +83,30 @@ h2 {
 
 }
 
-footer {
+.lociones{
+    background-color: rgba(179, 20, 219, 0.863);
+    color: white;
     display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    height: 90px;
-    padding: 0 22px;
-  }
- 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
+#Botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0, 255, 255, 0);
+    padding: auto;   
+}
 
+#Botones button{
+
+    background-color: rgb(26, 190, 196);
+    border-radius: 40px;
+    height: 50px;
+    box-shadow: 5px 5px 10px #f3f3f3ee;
+    
+}
