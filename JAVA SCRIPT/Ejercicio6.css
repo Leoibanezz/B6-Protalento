@@ -8,6 +8,14 @@ body {
     
   }
 
+li{
+    color: aliceblue;
+}
+
+p{
+
+    color: antiquewhite;
+}
 h1 {
     text-align: center;
     color: white;

@@ -1,50 +1,71 @@
-const vendedores = ['Juana', 'Pedro'];
+// Variables para almacenar los datos de ventas de Juana y Pedro
+let ventasJuana = [];
+let ventasPedro = [];
 
-    function obtenerCantidadVendida(vendedor) {
-      const cantidades = [];
-      for (const producto of productos) {
-        let cantidad = prompt(`Ingrese la cantidad de ${producto.nombre} vendida por ${vendedor}:`);
-        while (isNaN(cantidad)) {
-          cantidad = prompt(`Error. Ingrese un valor numérico para la cantidad de ${producto.nombre} vendida por ${vendedor}:`);
-        }
-        cantidades.push(parseInt(cantidad));
-      }
-      return cantidades;
-    }
+// Función para realizar una venta
+function realizarVenta(empleado, perfumeIndex) {
+  const perfumeInput = document.querySelectorAll('input[type="text"]')[perfumeIndex];
+  const venta = perfumeInput.value.trim();
 
-    function calcularTotalRecolectado(cantidades) {
-      let total = 0;
-      for (let i = 0; i < productos.length; i++) {
-        total += productos[i].precio * cantidades[i];
-      }
-      return total;
-    }
+  if (venta ==='') {
+    alert('Por favor, ingresa el valor de la venta.');
+    return;
+  }
 
-    function determinarEmpleadoDelMes() {
-      const cantidadesJuana = obtenerCantidadVendida('Juana');
-      const cantidadesPedro = obtenerCantidadVendida('Pedro');
-      const totalJuana = calcularTotalRecolectado(cantidadesJuana);
-      const totalPedro = calcularTotalRecolectado(cantidadesPedro);
+  const ventaNum = parseFloat(venta);
+  if (isNaN(ventaNum) || ventaNum <= 0) {
+    alert('Ingresa un valor de venta válido (número mayor a 0).');
+    return;
+  }
 
-      document.write('<h3>Cantidad de productos vendida por Juana:</h3>');
-      for (let i = 0; i < productos.length; i++) {
-        document.write(`${productos[i].nombre}: ${cantidadesJuana[i]}<br>`);
-      }
-      document.write(`<b>Total recolectado por Juana: ${totalJuana}</b><br><br>`);
+  if (empleado === 'Juana') {
+    ventasJuana.push(ventaNum);
+    actualizarResumenVentas('Juana');
+  } else if (empleado === 'Pedro') {
+    ventasPedro.push(ventaNum);
+    actualizarResumenVentas('Pedro');
+  }
 
-      document.write('<h3>Cantidad de productos vendida por Pedro:</h3>');
-      for (let i = 0; i < productos.length; i++) {
-        document.write(`${productos[i].nombre}: ${cantidadesPedro[i]}<br>`);
-      }
-      document.write(`<b>Total recolectado por Pedro: ${totalPedro}</b><br><br>`);
+  perfumeInput.value = '';
+}
+  
 
-      if (totalJuana > totalPedro) {
-        document.write('<h2>¡El empleado del mes es Juana!</h2>');
-      } else if (totalPedro > totalJuana) {
-        document.write('<h2>¡El empleado del mes es Pedro!</h2>');
-      } else {
-        document.write('<h2>¡Hubo un empate! No se pudo determinar un empleado del mes.</h2>');
-      }
-    }
+// Función para actualizar el resumen de ventas en el HTML
+function actualizarResumenVentas(empleado) {
+  const ventasEmpleado = (empleado === 'Juana') ? ventasJuana : ventasPedro;
+  const totalVentas = ventasEmpleado.reduce((total, venta) => total + venta, 0);
 
-    determinarEmpleadoDelMes();
+  const listaVentas = document.getElementById(`ventas-${empleado.toLowerCase()}`);
+  listaVentas.innerHTML = '';
+  ventasEmpleado.forEach((venta) => {
+    const listItem = document.createElement('li');
+    listItem.textContent = venta;
+    listaVentas.appendChild(listItem);
+  });
+
+  const totalEmpleado = document.getElementById(`total-${empleado.toLowerCase()}`);
+  totalEmpleado.textContent = totalVentas.toFixed(2);
+
+  // Calcular y actualizar al empleado del mes
+  const totalJuana = ventasJuana.reduce((total, venta) => total + venta, 0);
+  const totalPedro = ventasPedro.reduce((total, venta) => total + venta, 0);
+
+  const empleadoMes = document.getElementById('empleado-mes');
+  if (totalJuana > totalPedro) {
+    empleadoMes.textContent = 'Juana';
+  } else if (totalJuana < totalPedro) {
+    empleadoMes.textContent = 'Pedro';
+  } else {
+    empleadoMes.textContent = 'Ninguno (empate)';
+  }
+}
+
+// Evento para los botones de venta
+document.getElementById('Botones').addEventListener('click', (event) => {
+  if (event.target.tagName === 'BUTTON') {
+    const empleado = event.target.textContent.includes('Juana') ? 'Juana' : 'Pedro';
+    const perfumeIndex = event.target.textContent.includes('Juana') ? 'Juana' : 'Pedro';
+    realizarVenta(empleado, perfumeIndex);
+  }
+})
+
