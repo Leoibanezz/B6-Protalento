@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAJERO</title>
+  <title>Cajero Automático</title>
+  <link rel="stylesheet" href="Cajero.css">
 </head>
 <body>
-    <header><center><h1>CAJERO AUTOMATICO LEONARDO</h1></center></header>
+  <header class="header">
+  <h1>Cajero Automático</h1>
+</header>
+<main class="contenedor">
+  <div id="app">
+    <label for="selectAccount">Selecciona una cuenta:</label>
+    <select id="selectAccount">
+      <option value="0">Leonardo</option>
+      <option value="1">Daniel</option>
+      <option value="2">Viviana</option>
+    </select>
+    <br>
+    <label for="password">Ingresa el password:</label>
+    <input type="password" id="password">
+    <button onclick="login()">Ingresar</button>
     
-    <!--DOM-->
-<div>
-        <imput class="imput" aria-placeholder="Cantidad a depositar" />
-        <button class=" buttonDeposito">DEPOSTAR</button>
-        <br>
-        <br>
-        <br>
-    <div class="notificacion is link">
-        <button class="delet"></button>
-        <span id="tag_cuenta">
-            Cantidad en tu cuenta:
-        </span>
+    <div id="Botones">
+      <button onclick="consultarSaldo()">Consultar Saldo</button>
+      <button onclick="ingresarMonto()">Ingresar Monto</button>
+      <button onclick="retirarMonto()">Retirar Monto</button>
     </div>
-</div>
+  </div>
+</main>
 
-
-
-    <script src="Cajero.js"></script>
+  <script src="Cajero.js"></script>
 </body>
 </html>
