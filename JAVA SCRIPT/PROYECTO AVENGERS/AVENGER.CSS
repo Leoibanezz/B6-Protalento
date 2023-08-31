@@ -1,0 +1,72 @@
+h1{
+color: blueviolet;
+
+}
+
+h1{
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    
+}
+
+#Titulo2{
+
+color: rgb(224, 41, 148);
+
+}
+
+h2{
+
+   font-family:'Times New Roman', Times, serif;
+}
+
+span.Titulos{
+
+    color: rgb(247, 247, 135);
+
+}
+
+span.Titulo{
+
+    font-family:'Times New Roman', Times, serif;
+}
+
+#Titulo3{
+
+    color: rgb(224, 41, 148);
+    
+    }
+
+span.Iron{
+
+text-decoration: underline;
+color: red;
+
+}
+
+span.Hulk{
+
+    background-color: black;
+    color:rgb(47, 236, 119);
+
+}
+
+span.Thor{
+
+    background-color: black;
+    color:rgb(47, 236, 119);
+
+}
+
+span.Capitan{
+
+    text-decoration: underline;
+    color: red; }
+
+ p{
+
+    color: rgb(35, 143, 206);
+
+ }   
+
+ 
