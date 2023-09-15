@@ -1,0 +1,84 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1565021324587-5fd009870e68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
+    color: white;
+    background-size: cover;
+    font-family:monospace;
+}
+
+header {
+    background-image: url(https://www.shutterstock.com/image-vector/black-blue-glossy-metal-shapes-260nw-1912805740.jpg);
+    background-size: cover;
+    color: rgb(235, 233, 233);
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    font-family:monospace;
+    
+    
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+#options-container{
+display: flex;
+justify-content: center
+
+}
+#trivia-container {
+    border: 12px solid #dfdfdf;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#score-container {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+button {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+}
+
+button:hover {
+    background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+}
+
+button {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  
+  button {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  button {
+    font-weight: 600;
+  }
