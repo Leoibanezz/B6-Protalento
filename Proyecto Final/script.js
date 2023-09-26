@@ -34,22 +34,3 @@ function limpiarCampos() {
   document.getElementById('apellido').value = '';
   document.getElementById('especialidad').value = '';
 }
-
-function iniciarSesion() {
-  const nombreLogin = document.getElementById('nombreLogin').value;
-  const apellidoLogin = document.getElementById('apellidoLogin').value;
-
-  if (nombreLogin && apellidoLogin) {
-    const veterinarioEncontrado = veterinarios.find(
-      vet => vet.nombre === nombreLogin && vet.apellido === apellidoLogin
-    );
-
-    if (veterinarioEncontrado) {
-      alert('Inicio de sesión exitoso.');
-    } else {
-      alert('Nombre o apellido incorrectos. Verifique e intente nuevamente.');
-    }
-  } else {
-    alert('Por favor, complete todos los campos.');
-  }
-}
