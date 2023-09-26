@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro y Autenticación de Veterinarios</title>
+</head>
+<body>
+  <h1>Registro y Autenticación de Veterinarios</h1>
+  <h2>Registro de Veterinarios</h2>
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" placeholder="Nombre"><br><br>
+
+  <label for="apellido">Apellido:</label>
+  <input type="text" id="apellido" placeholder="Apellido"><br><br>
+
+  <label for="especialidad">Especialidad:</label>
+  <input type="text" id="especialidad" placeholder="Especialidad"><br><br>
+
+  <button onclick="registrarVeterinario()">Registrar Veterinario</button>
+
+  <hr>
+
+  <h2>Inicio de Sesión de Veterinario</h2>
+  <label for="nombreLogin">Nombre:</label>
+  <input type="text" id="nombreLogin" placeholder="Nombre"><br><br>
+
+  <label for="apellidoLogin">Apellido:</label>
+  <input type="text" id="apellidoLogin" placeholder="Apellido"><br><br>
+
+  <button onclick="iniciarSesion()">Iniciar Sesión</button>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
