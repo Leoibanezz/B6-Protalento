@@ -24,7 +24,14 @@ const PersonSchema = {
         allowNull: false,
         type: DataTypes.STRING,
         field:'name'
+    },
+
+    address:{ 
+        allowNull:false,
+        type: DataTypes.STRING,
+        field: 'address'
     }
-}
   
+}
+
 module.exports = { Person, PersonSchema };
