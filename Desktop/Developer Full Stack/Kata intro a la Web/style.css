@@ -1,0 +1,82 @@
+.chicoAzul{
+    background-color: rgb(5, 248, 248);
+    display: flex;
+    height: 130px;
+    width: auto;
+    margin: 15px;
+}
+
+.grandeAzul {
+    background-color: rgb(5, 248, 248);
+    display: flex;
+    height: 160px;
+    width: auto;
+    margin: 15px;
+
+}
+.container1 {
+
+    display: flex;
+    height: 150px;
+    width: auto;
+    margin: 15px;
+    gap: 10px;
+}
+.container1 .derecho{
+
+    background-color:  rgb(5, 248, 248);
+    display: flex;
+    height: auto;
+    width: 50%;
+    margin: 0 7px 0 0;
+    
+}
+
+.container1 .izquierdo{
+
+    background-color:  rgb(5, 248, 248);
+    display: flex;
+    height: auto;
+    width: 50%;
+    margin: 0 0 0 7px;
+    
+    
+}
+
+.grandeAzul1 {
+    background-color: rgb(20, 248, 248);
+    display: flex;
+    height: 160px;
+    width: auto;
+    gap: 10px;
+    margin: 15px;
+
+}
+.container {
+    
+    display: flex;
+    height: 140px;
+    width: auto;
+    margin: 15px;
+    gap: 10px;
+}
+
+.container .derechoAbajo{
+
+    background-color: rgb(5, 248, 248);
+    display: flex;
+    height: auto;
+    width: 50%;
+    margin: 0 7px 0 0;
+    
+}
+.container .izquierdoAbajo{
+
+    background-color:  rgb(5, 248, 248);
+    display: flex;
+    height: auto;
+    width: 50%;
+    margin: 0 0 0 7px;
+    
+    
+}
